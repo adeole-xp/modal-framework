@@ -1,0 +1,14 @@
+<!--**
+ * @author amol.deole
+ *-->
+<div class="text-center">
+  <button type="button" class="btn btn-sm btn-outline-dark btn-width" (click)="openConfirm()">Open Confirm
+    Modal</button>
+  <br>Confirmation result: {{confirmedResult | json}}
+</div>
+
+<div class="text-center">
+  <button type="button" class="btn btn-sm btn-outline-dark btn-width" (click)="openCustomDialog()">Open Custom
+    Modal</button>
+  <br> modal result: {{customResult | json}}
+</div>

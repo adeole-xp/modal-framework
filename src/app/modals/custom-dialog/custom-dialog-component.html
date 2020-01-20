@@ -1,0 +1,22 @@
+<div>
+	<div class="modal-header">
+		<h5 class="modal-title">Language</h5>
+	</div>
+	<div class="modal-body">
+		<p>Your language preference?</p>
+		<div>
+			<p *ngFor="let language of languages">
+				<label><input [formControl]="choice" [value]="language" type="radio">{{language}}</label>
+			</p>
+		</div>
+
+	</div>
+	<div class="modal-footer text-center d-block">
+		<div class="col-md-3 offset-md-4" id="yes-no-btn">
+			<button type="button" class="btn btn-sm btn-secondary btn-width"
+				(click)="activeModal.close()">Cancel</button>
+			<button type="button" class="btn btn-sm btn-primary btn-width ml-2" [class.disabled]="choice.invalid"
+				[disabled]="choice.invalid" (click)="activeModal.close(choice.value)">OK</button>
+		</div>
+	</div>
+</div>

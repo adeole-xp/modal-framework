@@ -1,0 +1,15 @@
+/**
+ * @author amol.deole
+ */
+.btn-width {
+  min-width: 50px;
+}
+body {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center; /*centers items on the line (the x-axis by default)*/
+  align-items: center;
+}

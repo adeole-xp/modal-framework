@@ -1,0 +1,37 @@
+<!--**
+ * @author amol.deole
+ *-->
+<div class="confirmation-modal">
+    <div class="modal-header">
+        <div class="modal-icons container ">
+            <span id="lbl-open-group-header" [title]="modalTitle">
+                <h5 class="modal-title">{{modalTitle}}</h5>
+            </span>
+            <div class="icons">
+                <span id="icn-open-grp-close" class="icon_modal icon_modal_medium icon_search_modal"
+                    (click)="closeAction(true)" [title]="'openGroup.close'"></span>
+            </div>
+        </div>
+    </div>
+    <div class="modal-body">
+        <div id="mdl-bdy-msg" class="container-fluid" #descTemplate>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div [innerHTML]="modalMsg"> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer text-center d-block" id="btn-section">
+    <div class="col-md-12 text-center" id="yes-no-btn">
+        <button id="btn-no" [title]="secondaryActionName" class="btn btn-sm btn-secondary btn-width mr-2"
+            (click)="closeAction(false)">
+            {{secondaryActionName}}
+        </button>
+        <button id="btn-yes" [title]="primaryActionName" class="btn btn-sm btn-primary btn-width"
+            (click)="primaryActionEvent()">
+            {{primaryActionName}}
+        </button>
+    </div>
+</div>
