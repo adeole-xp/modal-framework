@@ -10,7 +10,7 @@ We can avoid pre-loading of the component into `DOM` by using its selector which
 
 One can directly inject the provided `ModalService` in respective component and use it by passing disired component to it. Before passing the component to service we need to add it in `entryComponents` section of our module.
 
-## To use the modal framework;
+## How to use the modal framework:
 
 Import the `ModalService` in your respective component. The `ModalService` has two methods.
 
